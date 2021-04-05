@@ -5,14 +5,6 @@ let ySpeed;
 let canvas;
 let ballX, ballY;
 
-if (windowWidth <= 768) {
-  ballX = 50;
-  ballY = 50;
-} else {
-  ballX = 200;
-  ballY = 200;
-}
-
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0, "fixed");
@@ -21,6 +13,14 @@ function setup() {
   yStartBall = random(1897);
   xSpeed = 10;
   ySpeed = 10;
+
+  if (windowWidth <= 768) {
+    ballX = 50;
+    ballY = 50;
+  } else {
+    ballX = 200;
+    ballY = 200;
+  }
 }
 
 function draw() {
