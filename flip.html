@@ -13,30 +13,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.js"></script>
+
 
     <link rel="stylesheet" href="/styles/style.css" />
 
-    <style>
-
-    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 
-<body data-scroll-container>
+<body>
     <div class="d-flex justify-content-between sticky-top" id="header">
         <p><a href="/">vinícius queiróz</a></p>
         <p><a href="/about.html">sobre</a></p>
         <p><a href="/random">random</a></p>
     </div>
 
-    <main>
-        <div class="block-header"></div>
-        <div class="col-sm-3">
+    <main data-scroll-container>
+        <div class="block-header" data-scroll-section></div>
+        <div class="col-sm-3" data-scroll-section>
             <p>morna foundry</p>
             <p>dezembro, 2020</p>
             <p></p>
@@ -53,20 +51,20 @@
             <br>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" data-scroll-section>
             <img src="/images/experimentacao-cores-flip-cover-inner.gif" width="100%" style="border-radius: 20px;" />
         </div>
 
-        <div class="container-fluid grid grid-template-4">
+        <div class="container-fluid grid grid-template-4" data-scroll-section>
             <img src="/images/experimentacao-cores-flip-1.png" width="100%" />
             <img src="/images/experimentacao-cores-flip-2.png" width="100%" />
         </div>
 
-        <div class="container-fluid grid grid-template-4">
+        <div class="container-fluid grid grid-template-4" data-scroll-section>
             <img src="/images/experimentacao-cores-flip-3.png" width="100%" />
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" data-scroll-section>
             <img src="/images/experimentacao-cores-flip-back.gif" width="100%" />
         </div>
     </main>
