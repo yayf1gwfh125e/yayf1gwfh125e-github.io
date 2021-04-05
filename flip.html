@@ -10,9 +10,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
 
     <link rel="stylesheet" href="/styles/style.css" />
 
@@ -25,18 +27,15 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 
-<body data-barba="wrapper">
+<body data-scroll-container>
+    <div class="d-flex justify-content-between sticky-top" id="header">
+        <p><a href="/">vinícius queiróz</a></p>
+        <p><a href="/about.html">sobre</a></p>
+        <p><a href="/random">random</a></p>
+    </div>
 
-    <main data-barba="container" data-barba-namespace="home">
-
-        <div class="d-flex justify-content-between sticky-top" id="header">
-            <p><a href="/">vinícius queiróz</a></p>
-            <p><a href="/about.html">sobre</a></p>
-            <p><a href="/random">random</a></p>
-        </div>
+    <main>
         <div class="block-header"></div>
-
-
         <div class="col-sm-3">
             <p>morna foundry</p>
             <p>dezembro, 2020</p>
@@ -59,33 +58,23 @@
         </div>
 
         <div class="container-fluid grid grid-template-4">
-            <img src="/images/experimentacao-cores-flip-1.png" data-aos="fade-up" data-aos-duration="2500" width="100%">
-            <img src="/images/experimentacao-cores-flip-2.png" data-aos="fade-up" data-aos-duration="2500" width="100%">
+            <img src="/images/experimentacao-cores-flip-1.png" width="100%" />
+            <img src="/images/experimentacao-cores-flip-2.png" width="100%" />
         </div>
 
-        <div class="container-fluid grid grid-template-4" data-aos="fade-up" data-aos-duration="2500">
-            <img src="/images/experimentacao-cores-flip-3.png" width="100%" alt="">
+        <div class="container-fluid grid grid-template-4">
+            <img src="/images/experimentacao-cores-flip-3.png" width="100%" />
         </div>
 
-
-        <div class="container-fluid" data-aos="fade-up" data-aos-duration="2500">
+        <div class="container-fluid">
             <img src="/images/experimentacao-cores-flip-back.gif" width="100%" />
         </div>
-
-
-
-
-
-        <div class="block-header"></div>
-        <div class="grid grid-template-2">
-            <p>voltar ao topo</p>
-            <p>próximo</p>
-        </div>
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-        AOS.init({
-            easing: 'ease'
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
         });
     </script>
 </body>
