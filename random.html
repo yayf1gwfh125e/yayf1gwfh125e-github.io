@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <style>
+        body {
+            color: black;
+            background-color: white;
+        }
+
+        a,
+        a:hover {
+            color: black;
+        }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-180535428-1");
+  </script> -->
+</head>
+
+<body>
+    <main>
+
+        <div class="d-flex justify-content-between sticky-top" id="header">
+            <p><a href="/">vinícius queiróz</a></p>
+            <p><a href="/about.html">sobre</a></p>
+            <p><a href="/random.html">random</a></p>
+        </div>
+        <div class="block-header"></div>
+
+        <div class="container-fluid grid grid-template-3">
+            <img src="/images/random/color-exp-card_1.png" width="100%" alt="">
+            <img src="/images/random/v-go.png" width="100%" alt="">
+        </div>
+
+        <div class="container-fluid grid grid-template-2">
+            <img src="/images/random/iel-estagio-2.png" width="100%" alt="">
+            <img src="/images/random/iel-estagio-3.png" width="100%" alt="">
+        </div>
+
+        <div class="container-fluid grid grid-template-1">
+            <img src=" /images/random/amanda-maia-1.png" width="100%" alt="">
+            <img src="/images/random/amanda-maia-2.png" width="100%" alt="">
+            <img src="/images/random/amanda-maia-3.png" width="100%" alt="">
+        </div>
+
+
+        <div class="container-fluid grid grid-template-4">
+            <img src="/images/random/Comp3.gif" width="100%" alt="">
+            <img src="/images/random/rotkehmd.png" width="100%" alt="">
+        </div>
+
+        <div class="container-fluid">
+            <img src="/images/random/money_machine_150820.png" width="100%" alt="">
+        </div>
+
+        <div class="container-fluid grid grid-template-4">
+            <img src="/images/random/Comp4.gif" width="100%" alt="">
+            <img src="/images/random/Comp5.gif" width="100%" alt="">
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="/js/barba.js"></script>
+    <script>
+        $(window).scroll(function () {
+            //After scrolling 100px from the top...
+            if ($(window).scrollTop() >= 60) {
+                $('body').css('background-color', '#000');
+                $('body').css('transition', '3s');
+                $('body').css('color', 'white');
+                $('a').css('transition', '4s');
+                $('a').css('color', ' white');
+                //Otherwise remove inline styles and thereby revert to original stying
+            } else {
+                $('body').css('background-color', '');
+                $('body').css('transition', '2s');
+                $('body').css('color', '');
+                $('a').css('transition', '2s');
+                $('a').css('color', '');
+            }
+        });
+    </script>
+</body>
+
+</html>
