@@ -3,7 +3,6 @@ let yStartBall;
 let xSpeed;
 let ySpeed;
 let canvas;
-let ballX, ballY;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -13,19 +12,11 @@ function setup() {
   yStartBall = random(1897);
   xSpeed = 10;
   ySpeed = 10;
-
-  if (windowWidth <= 768) {
-    ballX = 50;
-    ballY = 50;
-  } else {
-    ballX = 200;
-    ballY = 200;
-  }
 }
 
 function draw() {
   clear();
-  ellipse(xStartBall, yStartBall, ballX, ballY);
+  ellipse(xStartBall, yStartBall, 200, 200);
   noStroke();
   fill(0, 0, 255);
 
