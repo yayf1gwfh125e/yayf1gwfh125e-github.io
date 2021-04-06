@@ -101,31 +101,29 @@ body {
   color: #6b6b6b;
 }
 
-@media screen and (min-width: 320px) {
-  p, a {
-    font-size: calc(13px + 4 * (100vw - 320px) / 1180);
-  }
-  p {
-    display: block;
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
-  }
-  a {
-    color: #fff;
-  }
-  a:hover {
-    font-family: 'happy-times-NG_italic_master_web';
-    text-decoration: none;
-    color: #fff;
-  }
-  h2 {
-    color: #6b6b6b;
-    font-family: 'happy-times-NG_italic_master_web';
-    font-weight: 400;
-    font-style: normal;
-  }
+p {
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  font-family: 'happy-times-NG_italic_master_web';
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  color: #6b6b6b;
+  font-family: 'Helvetica Now Text';
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -184,6 +182,12 @@ body {
 @media screen and (min-width: 1365px) {
   body {
     margin: 0px 9px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 /*# sourceMappingURL=style.css.map */
