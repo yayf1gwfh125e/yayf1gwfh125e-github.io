@@ -46,14 +46,15 @@
 </head>
 
 <body id="top">
-  <div class="d-flex justify-content-between sticky-top" id="header">
-    <p><a href="/">vinícius queiróz</a></p>
-    <p><a href="/about">sobre</a></p>
-    <p><a href="/random">random</a></p>
-  </div>
-  <div class="block-header" data-scroll></div>
-  <main data-scroll-container>
-    <div class="col-sm-3" data-scroll>
+  <main>
+    <div class="d-flex justify-content-between sticky-top" id="header">
+      <p><a href="/">vinícius queiróz</a></p>
+      <p><a href="/about">sobre</a></p>
+      <p><a href="/random">random</a></p>
+    </div>
+    <div class="block-header"></div>
+
+    <div class="col-sm-3">
       <p>morna foundry</p>
       <p>dezembro, 2020</p>
       <p></p>
@@ -71,39 +72,39 @@
       <br>
     </div>
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/covers/morna-cover.png" width="100%" style="border-radius: 20px;" alt="" />
     </div>
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/morna/morna-1.png" width="100%" alt="">
     </div>
 
-    <div class="container-fluid container-video" data-scroll>
+    <div class="container-fluid container-video">
       <video autoplay muted loop>
         <source src="/images/morna/morna-2.mp4">
       </video>
     </div>
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/morna/morna-3.gif" width="100%">
     </div>
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/morna/morna-4.png" width="100%">
     </div>
 
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/morna/morna-5.jpg" width="100%">
     </div>
 
 
-    <div class="container-fluid" data-scroll>
+    <div class="container-fluid">
       <img src="/images/morna/morna-6.png" width="100%">
     </div>
 
-    <div class="grid grid-template-2" data-scroll>
+    <div class="grid grid-template-2">
       <h2><a href="#top">voltar ao topo</a></h2>
       <h2><a href="/flip">próximo →</a></h2>
     </div>
@@ -125,13 +126,6 @@
         $('a').css('transition', '1s');
         $('a').css('color', '');
       }
-    });
-  </script>
-  <script>
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      lerp: 0.08
     });
   </script>
 </body>
