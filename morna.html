@@ -46,15 +46,13 @@
 </head>
 
 <body id="top">
+  <div class="d-flex justify-content-between sticky-top" id="header">
+    <p><a href="/">vinícius queiróz</a></p>
+    <p><a href="/about">sobre</a></p>
+    <p><a href="/random">random</a></p>
+  </div>
+  <div class="block-header" data-scroll></div>
   <main data-scroll-container>
-    <div class="d-flex justify-content-between sticky-top" id="header" data-scroll>
-      <p><a href="/">vinícius queiróz</a></p>
-      <p><a href="/about">sobre</a></p>
-      <p><a href="/random">random</a></p>
-    </div>
-    <div class="block-header" data-scroll></div>
-
-
     <div class="col-sm-3" data-scroll>
       <p>morna foundry</p>
       <p>dezembro, 2020</p>
@@ -110,14 +108,6 @@
       <h2><a href="/flip">próximo →</a></h2>
     </div>
   </main>
-
-  <script>
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      lerp: 0.08
-    });
-  </script>
   <script>
     $(window).scroll(function () {
       //After scrolling 100px from the top...
@@ -135,6 +125,13 @@
         $('a').css('transition', '1s');
         $('a').css('color', '');
       }
+    });
+  </script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      lerp: 0.08
     });
   </script>
 </body>
