@@ -1,0 +1,52 @@
+//global bs fixing
+.container-fluid
+    padding: 0
+    margin: 9px 0
+
+.row
+    margin: 0
+
+.col-sm-3,
+.col-sm-6
+    padding: 0
+
+@media screen and ( max-width: 768px)
+    .col-sm-3
+        margin-bottom: 30px
+
+//random page grid
+.grid
+    display: grid
+
+.grid-template-1
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 9px
+
+.grid-template-2
+    grid-template-columns: 63.7% 1fr
+    grid-gap: 9px
+
+.grid-template-3
+    grid-template-columns: 1fr 63.7%
+    grid-gap: 9px
+
+.grid-template-4
+    grid-template-columns: 1fr 1fr
+    grid-gap: 9px
+
+.container-fluid.home
+    padding-bottom: 10%
+
+.container-fluid.grid.grid-template-4.baseline
+    align-items: end
+
+@media screen and ( max-width: 768px)
+
+    .grid-template-1,
+    .grid-template-2,
+    .grid-template-3,
+    .grid-template-4
+        grid-template-columns: 1fr
+
+    .container-fluid.home
+        padding-bottom: 0%

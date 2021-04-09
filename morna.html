@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="/styles/style.css" />
@@ -20,19 +23,39 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
   <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <style>
+    .container-video>video {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1366px) {
+      .container-video>video {
+        width: 70%;
+      }
+
+      .container-video {
+        height: 100vh;
+        background-color: #ff0062;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 
 <body id="top">
-  <main>
-    <div class="d-flex justify-content-between sticky-top" id="header">
+  <main data-scroll-container>
+    <div class="d-flex justify-content-between sticky-top" id="header" data-scroll>
       <p><a href="/">vinícius queiróz</a></p>
       <p><a href="/about">sobre</a></p>
       <p><a href="/random">random</a></p>
     </div>
-    <div class="block-header"></div>
+    <div class="block-header" data-scroll></div>
 
 
-    <div class="col-sm-3">
+    <div class="col-sm-3" data-scroll>
       <p>morna foundry</p>
       <p>dezembro, 2020</p>
       <p></p>
@@ -41,7 +64,8 @@
       <p>
         morna Foundry surge como projeto tipográfico mantido por Vinícius Queiróz
         com o objetivo de produzir e experimentar métodos do desenho de tipos, sem
-        vínculo com parâmentros estéticos e técnicos.
+        vínculo com parâmentros estéticos e técnicos. ao todo, foram produzidas 35 tipos ao longo de 2 meses.
+        após processo de aprendizado, a fundição foi descontinuada para dar lugar a novas experiências.
         <br>
         <br>
         <a href="">→ live</a>
@@ -49,39 +73,51 @@
       <br>
     </div>
 
-    <div class="container-fluid">
-      <img src="/images/m-COVER-inner.png" width="100%" style="border-radius: 20px;" alt="" />
+    <div class="container-fluid" data-scroll>
+      <img src="/images/covers/morna-cover.png" width="100%" style="border-radius: 20px;" alt="" />
     </div>
 
-    <div class="container-fluid">
-      <img src="/images/morna-numbers.gif" width="100%" alt="">
+    <div class="container-fluid" data-scroll>
+      <img src="/images/morna/morna-1.png" width="100%" alt="">
+    </div>
+
+    <div class="container-fluid container-video" data-scroll>
+      <video autoplay muted loop>
+        <source src="/images/morna/morna-2.mp4">
+      </video>
+    </div>
+
+    <div class="container-fluid" data-scroll>
+      <img src="/images/morna/morna-3.gif" width="100%">
+    </div>
+
+    <div class="container-fluid" data-scroll>
+      <img src="/images/morna/morna-4.png" width="100%">
     </div>
 
 
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="align-self-start col-sm kill-padding">
-          <img src="/images/m-1.png" width="100%" alt="" />
-        </div>
-        <div class="align-self-end col-sm-5 kill-padding">
-          <img src="/images/m-3.png" width="100%" alt="" />
-        </div>
-      </div>
-      <div class="row">
-        <img class="kill-padding img-tp-bt" src="/images/m-5.png" width="100%" alt="" />
-        <img class="kill-padding img-tp-bt" src="/images/m-7.png" width="100%" alt="" />
-        <img class="kill-padding img-tp-bt" src="/images/m-6.png" width="100%" alt="" />
-      </div>
-    </div>
+    <div class="container-fluid" data-scroll>
+      <img src="/images/morna/morna-5.jpg" width="100%">
     </div>
 
-    <div class="grid grid-template-2">
+
+    <div class="container-fluid" data-scroll>
+      <img src="/images/morna/morna-6.png" width="100%">
+    </div>
+
+    <div class="grid grid-template-2" data-scroll>
       <h2><a href="#top">voltar ao topo</a></h2>
-      <h2><a href="/kaiser">próximo →</a></h2>
+      <h2><a href="/flip">próximo →</a></h2>
     </div>
-
   </main>
+
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      lerp: 0.08
+    });
+  </script>
   <script>
     $(window).scroll(function () {
       //After scrolling 100px from the top...

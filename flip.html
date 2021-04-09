@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.js"></script>
-
     <link rel="stylesheet" href="/styles/style.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
@@ -21,15 +18,14 @@
 </head>
 
 <body id="top">
-    <div class="d-flex justify-content-between sticky-top" id="header">
-        <p><a href="/">vinícius queiróz</a></p>
-        <p><a href="/about">sobre</a></p>
-        <p><a href="/random">random</a></p>
-    </div>
-
-    <main data-scroll-container>
-        <div class="block-header" data-scroll-section></div>
-        <div class="col-sm-3" data-scroll-section>
+    <main>
+        <div class="d-flex justify-content-between sticky-top" id="header">
+            <p><a href="/">vinícius queiróz</a></p>
+            <p><a href="/about">sobre</a></p>
+            <p><a href="/random">random</a></p>
+        </div>
+        <div class="block-header"></div>
+        <div class="col-sm-3">
             <p>experimentação de cores</p>
             <p>março, 2021</p>
             <p></p>
@@ -44,36 +40,30 @@
             <br>
         </div>
 
-        <div class="container-fluid" data-scroll-section>
-            <img src="/images/experimentacao-cores-flip-cover-inner.gif" width="100%" style="border-radius: 20px;" />
+        <div class="container-fluid">
+            <img src="/images/exp/experimentacao-cores-flip-cover-inner.gif" width="100%"
+                style="border-radius: 20px;" />
         </div>
 
-        <div class="container-fluid grid grid-template-4" data-scroll-section>
-            <img src="/images/experimentacao-cores-flip-1.png" width="100%" />
-            <img src="/images/experimentacao-cores-flip-2.png" width="100%" />
+        <div class="container-fluid grid grid-template-4">
+            <img src="/images/exp/experimentacao-cores-flip-1.png" width="100%" />
+            <img src="/images/exp/experimentacao-cores-flip-2.png" width="100%" />
         </div>
 
-        <div class="container-fluid grid grid-template-4" data-scroll-section>
-            <img src="/images/experimentacao-cores-flip-3.png" width="100%" />
+        <div class="container-fluid grid grid-template-4">
+            <img src="/images/exp/experimentacao-cores-flip-3.png" width="100%" />
         </div>
 
-        <div class="container-fluid" data-scroll-section>
-            <img src="/images/experimentacao-cores-flip-back.gif" width="100%" />
+        <div class="container-fluid">
+            <img src="/images/exp/experimentacao-cores-flip-back.gif" width="100%" />
         </div>
     </main>
 
-    <div class="grid grid-template-2" data-scroll-section>
+    <div class="grid grid-template-2">
         <h2><a href="#top">voltar ao topo</a></h2>
         <h2><a href="/eunafazenda">próximo →</a></h2>
     </div>
 
-    <script>
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            lerp: 0.08
-        });
-    </script>
 </body>
 
 </html>
