@@ -20,26 +20,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
   <link rel="manifest" href="favicon/site.webmanifest" />
-
-  <style>
-    .container-video>video {
-      width: 100%;
-    }
-
-    @media screen and (min-width: 1366px) {
-      .container-video>video {
-        width: 70%;
-      }
-
-      .container-video {
-        height: 100vh;
-        background-color: #ff0062;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  </style>
 </head>
 
 <body id="topo">
@@ -50,6 +30,12 @@
       <p><a href="/random">random</a></p>
     </div>
     <div class="block-header"></div>
+
+    <div class="container-fluid cover-mobile">
+      <img src="/images/covers/morna-cover.png" width="100%" />
+      <br>
+      <br>
+    </div>
 
     <div class="col-sm-3">
       <p>morna foundry</p>
@@ -69,16 +55,16 @@
       <br>
     </div>
 
-    <div class="container-fluid">
-      <img src="/images/covers/morna-cover.png" width="100%" style="border-radius: 20px;" alt="" />
+    <div class="container-fluid cover-image">
+      <img src="/images/covers/morna-cover.png" width="100%" />
     </div>
 
     <div class="container-fluid">
       <img src="/images/morna/morna-1.png" width="100%" alt="">
     </div>
 
-    <div class="container-fluid container-video">
-      <video autoplay muted loop>
+    <div class="container-fluid container-video" style="border-radius: 15px;">
+      <video playsinline autoplay muted loop>
         <source src="/images/morna/morna-2.mp4">
       </video>
     </div>
@@ -106,25 +92,6 @@
       <h2><a href="/flip">próximo →</a></h2>
     </div>
   </main>
-  <script>
-    $(window).scroll(function () {
-      //After scrolling 100px from the top...
-      if ($(window).scrollTop() >= 1200) {
-        $('body').css('background-color', '#999999');
-        $('body').css('transition', '4s');
-        $('body').css('color', 'black');
-        $('a').css('transition', '4s');
-        $('a').css('color', ' black');
-        //Otherwise remove inline styles and thereby revert to original stying
-      } else {
-        $('body').css('background-color', '');
-        $('body').css('transition', '1s');
-        $('body').css('color', '');
-        $('a').css('transition', '1s');
-        $('a').css('color', '');
-      }
-    });
-  </script>
 </body>
 
 </html>
