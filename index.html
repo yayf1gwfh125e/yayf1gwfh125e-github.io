@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vini — works</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/style.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-180535428-1");
+  </script>
+</head>
+
+<body>
+  <main>
+    <div id="curr" class="custom-cursor" data-custom-cursor>
+      <div class="cursor"></div>
+    </div>
+
+    <div class="d-flex justify-content-between sticky-top" id="header">
+      <h5><a href="/">vinícius queiróz</a></h5>
+      <h5><a href="/about">sobre</a></h5>
+      <h5><a href="/about">olá!</a></h5>
+    </div>
+    <div class="block-header">
+      <h5>(⠀⠀⠀designer & frontend developer⠀⠀⠀)</h5>
+    </div>
+
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="grid-item">
+        <a href="/melissa"><img class="blur" src="/images/Artboard.png" />
+          <p>Melissa x Lazy Oaf — 2021</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="/morna"><img class="blur" src="/images/morna/morna-1.png" />
+        <p>Morna Foundry — 2020</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="/kaiser"><img class="blur" src="/images/kaiser/kaiser-cheifs-3.png" />
+          <p>Yours truly, angry mob — 2020</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="/flip"><img class="blur" src="/images/exp/experimentacao-cores-flip-back.gif" />
+          <p>Modern sunset — 2021</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="/maia"><img class="blur" src="/images/covers/amanda-maia-cover.png" />
+          <p>Amanda Maia — 2020</p>
+        </a>
+      </div>
+      
+      <div class="grid-item">
+        <a href="/eunafazenda"><img class="blur" src="/images/eunafazenda/eunafazenda1.png" />
+          <p></p>Zine - Eu na fazenda — 2020</p>
+        </a>
+      </div>
+
+      <div class="grid-item">
+        <a href="/random"><img class="blur" src="/images/covers/RANDOM-COVER.png" />
+          <p>More stuff →</p>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // init Masonry
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress(function () {
+        $grid.masonry();
+      });
+    </script>
+</body>
+
+</html>

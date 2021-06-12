@@ -1,0 +1,38 @@
+@import './helpers/_variables'
+
+@import './bases/_text'
+@import './bases/_grids'
+
+@import './layout/_header'
+@import './layout/_home'
+
+@import './animations/_css-ani'
+
+@import './pages/_morna'
+
+body
+  background-color: $primary-bg
+  margin: 0px 15px
+  font-family: 'Helvetica Now Text'
+  -webkit-touch-callout: none // iOS Safari
+  -webkit-user-select: none // Safari
+  -khtml-user-select: none // Konqueror HTML
+  -moz-user-select: none // Old versions of Firefox
+  -ms-user-select: none // Internet Explorer/Edge
+  user-select: none // Non-prefixed version, currently
+
+img
+  border-radius: 15px
+
+::-webkit-scrollbar
+  display: none
+  -ms-overflow-style: none // IE and Edge
+  scrollbar-width: none // Firefox
+
+@media screen and (min-width: 1365px)
+  body
+    margin: 0px 15px
+
+@media screen and (prefers-reduced-motion: no-preference)
+  html
+    scroll-behavior: smooth

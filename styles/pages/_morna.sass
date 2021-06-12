@@ -1,0 +1,36 @@
+.container-video>video
+    width: 100%
+
+.cover-image
+    display: block
+
+.cover-image-mobile
+    display: none
+
+@media screen and (max-width: 411px)
+    .container-video
+        background-color: #ff0062
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 200px
+
+    .container-video>video
+        width: 80%
+
+    .cover-image
+        display: none
+
+    .cover-image-mobile
+        display: block
+
+@media screen and (min-width: 1366px)
+    .container-video>video
+        width: 70%
+
+    .container-video
+        height: 100vh
+        background-color: #ff0062
+        display: flex
+        justify-content: center
+        align-items: center
