@@ -26,6 +26,9 @@
 
     <link rel="stylesheet" href="/styles/style.css" />
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -70,19 +73,23 @@
         <div style="height: 10vh;"></div>
 
         <div class="container-fluid image-presentation">
-            <img src="/images/maia/amanda-maia-0.png" width="100%" />
+            <img data-aos="fade-up" src="/images/maia/amanda-maia-0.png" width="100%" />
         </div>
         <div class="container-fluid image-presentation">
-            <img src="/images/maia/amanda-maia-posts.png" width="100%" />
+            <img data-aos="fade-up" src="/images/maia/amanda-maia-posts.png" width="100%" />
         </div>
 
 
         <div class="grid grid-template-3 image-presentation">
             <h5><a href="#topo">voltar ao topo</a></h5>
-            <h5><a href="/flip">próximo →</a></h5>
+            <h5><a href="/eunafazenda">próximo →</a></h5>
         </div>
-
     </main>
+    <script>
+        AOS.init({
+          duration: 1500,
+        });
+  </script>
 </body>
 
 </html>

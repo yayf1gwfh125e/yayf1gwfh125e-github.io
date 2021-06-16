@@ -3,6 +3,7 @@ let yStartBall;
 let xSpeed;
 let ySpeed;
 let canvas;
+let SizeBall;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -10,15 +11,21 @@ function setup() {
   canvas.style("z-index", "-20");
   xStartBall = random(1920);
   yStartBall = random(1897);
-  xSpeed = 10;
-  ySpeed = 10;
+  xSpeed = 5;
+  ySpeed = 5;
+  SizeBall = 50;
 }
 
 function draw() {
   clear();
-  ellipse(xStartBall, yStartBall, 200, 200);
+  ellipse(xStartBall, yStartBall, SizeBall, SizeBall);
   noStroke();
   fill(0, 0, 255);
+
+  const mediaQuery = window.matchMedia('(min-width: 768px)')
+  if (mediaQuery.matches) {
+    SizeBall = 200;
+  }
 
   xStartBall = xStartBall + xSpeed;
   yStartBall = yStartBall + ySpeed;
