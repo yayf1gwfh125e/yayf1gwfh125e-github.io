@@ -1,0 +1,25 @@
+@media screen and ( min-width: 1080px)
+    div.cursors div
+        position: absolute
+        // width: 16px
+        // height: 16px
+        background-color: $p-main-color
+        border-radius: 50%
+        z-index: 9999999
+        pointer-events: none
+        transform: translate(-50%, -50%)
+
+    div.cursors div span
+        position: absolute
+        top: 0
+        left: 20px
+        cursor: crosshair !important
+        font-size: 2rem
+        line-height: 32px
+        color: $p-main-color
+        opacity: 0
+        transition: opacity 0.5s
+
+    div.cursors div span.visible
+        opacity: 1
+

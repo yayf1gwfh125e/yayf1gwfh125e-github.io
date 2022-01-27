@@ -1,34 +1,50 @@
-%paragraphy-common
-    line-height: 125%
-    font-weight: 400
-    font-style: normal
-
-h2,
-.tag-proj
-    color: $primary-color
-
 body
-    color: $secundary-color
+    color: $primary-color
+    letter-spacing: -1px
+
+hr
+    border-top: 1.5px solid rgba(0,0,0,.1)
+
+.arrow
+    font-size: 20px
 
 p
-    display: block
-    margin-block-start: 0
-    margin-block-end: 0
+    margin: 0
+
+.p-sub
+    display: flex
+    justify-content: space-between
+    padding: 0 10px
+
+.p-texto
+    padding-bottom: 6vh !important
+
 
 a
     color: $primary-color
 
 a:hover
-    font-family: 'happy-times-NG_italic_master_web'
-    text-decoration: none
-    color: $primary-color
+    color: $secundary-color
+    transition-duration: 0.8s
+    text-decoration-line: none
 
 h1
-    font-size: 2.5em
+    font-size: 4em
+    letter-spacing: -3px
+    word-spacing: 0px
+    line-height: 100%
 
-@media screen and ( max-width: 768px)
-    h1
-        font-size: 1.6em
+h4
+    font-size: 1.3em
+    margin: 0
+    line-height: 1.27
+
+.link
+    border-bottom: 1.5px solid rgba(0,0,0,.1)
+
+h5
+    font-size: 1.3em
+    margin: 0
 
 h2
     color: $secundary-color
@@ -41,9 +57,24 @@ h2
     src: local('Helvetica Now Text Regular'), local('Helvetica-Now-Text--Regular'), url('HelveticaNowText-Regular.woff2') format('woff2'), url('HelveticaNowText-Regular.woff') format('woff'),url('HelveticaNowText-Regular.ttf') format('truetype')
     font-weight: 400
     font-style: normal
+    font-display: swap
 
-@font-face
-    font-family: 'happy-times-NG_italic_master_web'
-    src: local('happy times NG italic master web'), local('happy-times-NG_italic_master_web'), url('happy-times-NG_italic_master_web.woff2') format('woff2'), url('happy-times-NG_italic_master_web.woff') format('woff'),url('happy-times-NG_italic_master_web.ttf') format('truetype')
-    font-weight: 400
-    font-style: normal
+@media screen and ( min-width: 1080px)
+    h1
+        font-size: 10em
+        margin-left: -10px
+        letter-spacing: -8px
+        word-spacing: 0px
+        line-height: 90%
+
+    h4
+        font-size: 2em
+
+    h5
+        font-size: 4em
+        letter-spacing: -3px
+
+    h6
+        font-size: 1.3em
+
+

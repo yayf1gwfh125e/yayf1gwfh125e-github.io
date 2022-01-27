@@ -1,0 +1,53 @@
+@import './layout/_masonry'
+
+@font-face
+    font-family: 'apfel-regular'
+    src: url('ApfelGrotezk-Regular.woff2') format('woff2'), url('ApfelGrotezk-Regular.woff') format('woff')
+    font-style: normal
+    font-display: swap
+
+$cor: red
+$cor2: rgb(0, 255, 0)
+
+.bodyLab
+    color: $cor
+    background-color: #f3f903
+    font-family: 'apfel-regular'
+
+.lab-font
+    font-size: 12em
+    font-family: 'cheee-wowie'
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+
+.aLab, .lab-text
+    color: $cor
+    display: inline-block
+    background-color: aqua
+    padding: 5px 15px
+    margin: 5px
+    border-radius: 40px
+
+.aLab:hover
+    color: $cor
+    background-color: $cor2 
+
+//animações
+.laboratorio
+    color: aqua
+    display: block
+    position: fixed
+    height: auto
+    left: 50%
+    top: 45%
+    transform: translateX(-50%)
+    animation: animate 2s linear infinite
+    z-index: 1
+
+@keyframes animate
+    0%
+        transform: translateX(-50%) perspective(200px) rotateX(0deg)
+
+    100%
+        transform: translateX(-50%) perspective(200px) rotateX(360deg)

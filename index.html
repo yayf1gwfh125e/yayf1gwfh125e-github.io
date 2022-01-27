@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="pt-BR">
+
+<head>
   <meta charset="UTF-8" />
+
+  <meta property="og:title" content="vini — works | Vinícius Queiróz" />
+  <meta property="og:locale" content="pt_br" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vini — Works</title>
+  <title>Vinícius Queiróz | Visual Designer</title>
 
   <meta name="description" content="Visual Designer e Frontend Developer">
   <meta name="twitter:card" content="summary_large_image">
@@ -18,16 +23,11 @@
   <meta property="og:image" content="https://vini.works/images/ogp-home.png">
   <meta property="og:type" content="website">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-  
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="/styles/style.css" />
 
@@ -46,72 +46,164 @@
     gtag("js", new Date());
     gtag("config", "UA-180535428-1");
   </script>
+
 </head>
 
 <body>
-  <main>
-    <div class="d-flex justify-content-between sticky-top" id="header">
-      <h5><a href="/">vinícius queiróz</a></h5>
-      <h5><a href="/about">sobre</a></h5>
-      <h5><a href="mailto:vnsqzs@gmail.com" target="_blank">olá!</a></h5>
-    </div>
-    <div class="block-header">
-      <h5>(⠀⠀⠀designer & frontend developer⠀⠀⠀)</h5>
-    </div>
+  <script src="/js/menuFade.js"></script>
 
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="grid-item">
-        <a href="/melissa"><img  class="blur" src="/images/covers/melissa-cover.png" />
-          <p>Melissa x Lazy Oaf — 2021</p>
-        </a>
+  <div class="conteudo" style="display: none;">
+    <div class="d-flex" id="header">
+      <div class="mr-auto p-2">
+        <h4><a href="/">Vinícius Queiróz</a></h4>
       </div>
-      <div class="grid-item">
-        <a href="/morna"><img  class="blur" src="/images/covers/morna-cover.png" />
-        <p>Morna Foundry — 2020</p>
-        </a>
+      <div class="p-2">
+        <h4><a href="/sobre">Sobre</a></h4>
       </div>
-      <div class="grid-item">
-        <a href="/kaiser"><img  class="blur" src="/images/covers/kaiser-cover.png" />
-          <p>Yours truly, angry mob — 2020</p>
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="/modern"><img  class="blur" src="/images/covers/modern-cover.png" />
-          <p>Modern sunset — 2021</p>
-        </a>
-      </div>
-      <div class="grid-item">
-        <a href="/maia"><img  class="blur" src="/images/covers/amanda-maia-cover.png" />
-          <p>Amanda Maia — 2020</p>
-        </a>
-      </div>
-      
-      <div class="grid-item">
-        <a href="/eunafazenda"><img  class="blur" src="/images/covers/eunafazenda-cover.png" />
-          <p></p>Zine - Eu na fazenda — 2020</p>
-        </a>
-      </div>
-
-      <div class="grid-item">
-        <a href="/random"><img  class="blur" src="/images/covers/random-cover.png" />
-          <p>More stuff →</p>
-        </a>
+      <div class="p-2">
+        <h4><a href="/lab">●Lab</a></h4>
       </div>
     </div>
+  </div>
 
-    <script>
-      // init Masonry
-      var $grid = $('.grid').masonry({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        columnWidth: '.grid-sizer'
-      });
-      // layout Masonry after each image loads
-      $grid.imagesLoaded().progress(function () {
-        $grid.masonry();
-      });
-    </script>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12">
+      <h5 class="animate__animated animate__fadeIn animate__slower">Vinícius Queiróz é um Visual Designer que está procurando fazer barulho ao redor.
+        Interessado em Design editorial, interfaces, branding e ilustração.
+        <a class="link" href="/sobre">●<span style="font-size: 50% !important;">⠀</span>Sobre</a>
+        <a class="link" href="mailto:vnsqzs@gmail.com">●<span style="font-size: 50% !important;">⠀</span>Entrar em
+          contato</a>
+        <a class="link" href="https://www.linkedin.com/in/vviniciusqueiroz/" target="_blank">●<span
+            style="font-size: 50% !important;">⠀</span>LinkedIn</a>
+        <a class="link" href="https://www.instagram.com/vviniciusqueiroz/" target="_blank">●<span
+            style="font-size: 50% !important;">⠀</span>Instagram</a>
+        <a class="link" href="/lab" target="_blank">●<span style="font-size: 50% !important;">⠀</span>Visitar
+          Laboratório</a>
+      </h5>
+    </div>
+  </div>
+
+  <div class="block-header"></div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <a class="homeImage" href="/calendario22"><img src="/images/calendario2022/IMG_1014.webp" width="100%"
+          height="100%" alt="Calendário fotografado ao fundo de concreto" data-hover="Visualizar" /></a>
+    </div>
+    <div class="col-lg-6">
+      <a class="homeImage" href="/calendario22"><img src="/images/calendario2022/calendario-vetor.webp" width="100%"
+          height="100%" alt="Layout de calendário em formato vetorial" data-hover="Visualizar" /></a>
+    </div>
+
+    <div class="p-sub col-lg-6 col-12">
+      <a href="/calendario22">
+        <h6>Calendário 2022</h6>
+      </a>
+      <p>Nov, 2021</p>
+    </div>
+
+    <div class="p-texto col-lg-6 col-12">
+      <p>Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e
+        impressora de impacto (dot matrix printer) em suas peças.
+        <a class="link" href="/calendario22">→ Mais</a>
+      </p>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="homeImage" href="/studiorr"><img src="/images/studiorr/studiorr-cover.webp" width="100%" height="100%"
+          alt="Página prinicpal de site minimalista" data-hover="Visualizar" /></a>
+    </div>
+
+    <div class="p-sub col-lg-6 col-12">
+      <a href="/studiorr">
+        <h6>Studio Ronaldo Rezende</h6>
+      </a>
+      <p>Out, 2021</p>
+    </div>
+
+    <div class="p-texto col-lg-6 col-12">
+      <p>O Design Escandinavo foi o principal guia da equipe, com uso de cores sóbrias, formas geométricas e limpeza
+        visual, que se refletiu também para a estética do site.
+        <a class="link" href="/studiorr">→ Mais</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-6">
+      <a class="homeImage" href="/turbojv"><img src="/images/turbojv/turbo-disco.webp" width="100%" height="100%"
+          alt="Parte da frente de encarte musical" data-hover="Visualizar" /></a>
+    </div>
+    <div class="col-lg-6">
+      <a class="homeImage" href="/turbojv"><img src="/images/turbojv/turbo-back.webp" width="100%" height="100%"
+          alt="Parte de trás de encarte musical" data-hover="Visualizar" /></a>
+    </div>
+
+    <div class="p-sub col-lg-6 col-12">
+      <a href="/turbojv">
+        <h6>Turbo — J.V.</h6>
+      </a>
+      <p>Set, 2021</p>
+    </div>
+
+    <div class="p-texto col-lg-6 col-12">
+      <p>JV Alberton AKA J.V. é um músico e compositor Pop que mistura influências do Art pop e Dance pop em seus
+        trabalhos.
+        <a class="link" href="/turbojv">→ Mais</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="homeImage" href="/melissa"><img src="/images/melissa/melissa-bilboard.webp" width="100%" height="100%"
+          alt="Anúncio em outdoor" data-hover="Visualizar" /></a>
+    </div>
+
+    <div class="p-sub col-lg-6 col-12">
+      <a href="/melissa">
+        <h6>Melissa x Lazy Oaf</h6>
+      </a>
+      <p>Mai, 2021</p>
+    </div>
+
+    <div class="p-texto col-lg-6 col-12">
+      <p>O collab entre as duas marcas resultou na repaginação da Kick Off Sandal e da City Bag, até então, já
+        comercializadas pela Melissa.
+        <a class="link" href="/melissa">→ Mais</a>
+      </p>
+    </div>
+  </div>
+
+  <!--  //Html Generation -->
+  <div class="loader-wrapper"></div>
+  <div class="cursors">
+    <div>
+      <span></span>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!--  //Body Scripts -->
+  <script src="/js/loader.js"></script>
+  <script src="/js/cursorHome.js"></script>
 </body>
 
 </html>
