@@ -1,28 +1,33 @@
-/* ---- grid ---- */
-/* clear fix */
-.grid:after
-    content: ''
-    display: block
-    clear: both
-
-/* ---- .grid-item ---- */
-.grid-sizer,
-.grid-item
+img
     width: 100%
-    padding: 5px
+    border-radius: 10px
 
-.grid-item img 
-    display: block
-    width: 100%
+figure
+    margin: 0
+    display: flex
+    margin-bottom: 5px
+    break-inside: avoid
     height: 100%
 
-@media screen and ( min-width: 1024px)
-    .grid-sizer,
-    .grid-item
-        width: 100%
+.container-grid
+    column-count: 2
+    column-gap: 5px
+    margin: 5px
 
-@media screen and ( min-width: 1368px)
-    .grid-sizer,
-    .grid-item
-        width: 50%
-        padding: 10px
+.container-grid > div
+    margin-bottom: 5px
+
+@media screen and ( min-width: 500px)
+    figure
+        margin-bottom: 15px
+
+    .container-grid
+        column-gap: 15px
+
+@media screen and ( min-width: 1024px)
+    figure
+        margin-bottom: 15px
+
+    .container-grid
+        column-count: 4
+        column-gap: 15px

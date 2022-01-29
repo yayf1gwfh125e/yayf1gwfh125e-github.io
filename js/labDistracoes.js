@@ -1,21 +1,20 @@
 let textBtn = document.querySelector(".distractions");
-textBtn.innerHTML = "Sem distrações";
+textBtn.innerHTML = "Off";
 
 function hide() {
-    var x = document.getElementById("hide");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      textBtn.innerHTML = "Sem distrações";
-    } else {
-      x.style.display = "none";
-      textBtn.innerHTML = "Com distrações";
-    }
+  var x = document.getElementById("hide");
+  var y = document.getElementById("btn-hide")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    textBtn.innerHTML = "Off";
+    y.style.color = "aqua";
+    y.style.background = "red";
 
-    var y = document.getElementById("hide2");
-    if (y.style.display === "none") {
-      y.style.display = "flex";
-    } else {
-      y.style.display = "none";
-    }
+  } else {
+    x.style.display = "none";
+    textBtn.innerHTML = "On";
+    y.style.color = "red";
+    y.style.background = "aqua";
   }
+}
 

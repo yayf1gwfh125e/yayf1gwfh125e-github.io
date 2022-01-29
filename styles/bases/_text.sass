@@ -9,16 +9,19 @@ hr
     font-size: 20px
 
 p
+    font-size: 14px
+    line-height: 1.3
     margin: 0
 
 .p-sub
-    display: flex
-    justify-content: space-between
     padding: 0 10px
 
-.p-texto
-    padding-bottom: 6vh !important
+.space-between
+    display: flex
+    justify-content: space-between
 
+.section-padding
+    padding-bottom: 6vh !important
 
 a
     color: $primary-color
@@ -43,7 +46,7 @@ h4
     border-bottom: 1.5px solid rgba(0,0,0,.1)
 
 h5
-    font-size: 1.3em
+    font-size: 1.5em
     margin: 0
 
 h2
@@ -59,7 +62,17 @@ h2
     font-style: normal
     font-display: swap
 
+@media screen and ( min-width: 390px)
+    h5
+        font-size: 1.7em
+        margin: 0
+        line-height: 1.22
+
 @media screen and ( min-width: 1080px)
+    p
+        font-size: 16px
+        margin: 0
+
     h1
         font-size: 10em
         margin-left: -10px
