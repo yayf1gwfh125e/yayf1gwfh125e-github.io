@@ -28,7 +28,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #f0efeb;
+  background-color: #e4e2e0;
 }
 
 @media screen and (min-width: 1080px) {
@@ -254,13 +254,13 @@ video {
 }
 
 .image-zoom-wrapper::after {
-  background-color: #f0efeb !important;
+  background-color: #e4e2e0 !important;
 }
 
 #header {
-  background: #f0efeb;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0efeb), color-stop(11%, rgba(247, 247, 247, 0.987)), color-stop(20.8%, rgba(247, 247, 247, 0.951)), color-stop(29.6%, rgba(247, 247, 247, 0.896)), color-stop(37.5%, rgba(247, 247, 247, 0.825)), color-stop(44.6%, rgba(247, 247, 247, 0.741)), color-stop(51%, rgba(247, 247, 247, 0.648)), color-stop(57%, rgba(247, 247, 247, 0.55)), color-stop(62.5%, rgba(247, 247, 247, 0.45)), color-stop(67.7%, rgba(247, 247, 247, 0.352)), color-stop(72.7%, rgba(247, 247, 247, 0.259)), color-stop(77.8%, rgba(247, 247, 247, 0.175)), color-stop(82.9%, rgba(247, 247, 247, 0.104)), color-stop(88.2%, rgba(247, 247, 247, 0.049)), color-stop(93.9%, rgba(247, 247, 247, 0.013)), to(rgba(247, 247, 247, 0)));
-  background: linear-gradient(180deg, #f0efeb 0, rgba(247, 247, 247, 0.987) 11%, rgba(247, 247, 247, 0.951) 20.8%, rgba(247, 247, 247, 0.896) 29.6%, rgba(247, 247, 247, 0.825) 37.5%, rgba(247, 247, 247, 0.741) 44.6%, rgba(247, 247, 247, 0.648) 51%, rgba(247, 247, 247, 0.55) 57%, rgba(247, 247, 247, 0.45) 62.5%, rgba(247, 247, 247, 0.352) 67.7%, rgba(247, 247, 247, 0.259) 72.7%, rgba(247, 247, 247, 0.175) 77.8%, rgba(247, 247, 247, 0.104) 82.9%, rgba(247, 247, 247, 0.049) 88.2%, rgba(247, 247, 247, 0.013) 93.9%, rgba(247, 247, 247, 0));
+  background: #e4e2e0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e4e2e0), color-stop(11%, rgba(247, 247, 247, 0.987)), color-stop(20.8%, rgba(247, 247, 247, 0.951)), color-stop(29.6%, rgba(247, 247, 247, 0.896)), color-stop(37.5%, rgba(247, 247, 247, 0.825)), color-stop(44.6%, rgba(247, 247, 247, 0.741)), color-stop(51%, rgba(247, 247, 247, 0.648)), color-stop(57%, rgba(247, 247, 247, 0.55)), color-stop(62.5%, rgba(247, 247, 247, 0.45)), color-stop(67.7%, rgba(247, 247, 247, 0.352)), color-stop(72.7%, rgba(247, 247, 247, 0.259)), color-stop(77.8%, rgba(247, 247, 247, 0.175)), color-stop(82.9%, rgba(247, 247, 247, 0.104)), color-stop(88.2%, rgba(247, 247, 247, 0.049)), color-stop(93.9%, rgba(247, 247, 247, 0.013)), to(rgba(247, 247, 247, 0)));
+  background: linear-gradient(180deg, #e4e2e0 0, rgba(247, 247, 247, 0.987) 11%, rgba(247, 247, 247, 0.951) 20.8%, rgba(247, 247, 247, 0.896) 29.6%, rgba(247, 247, 247, 0.825) 37.5%, rgba(247, 247, 247, 0.741) 44.6%, rgba(247, 247, 247, 0.648) 51%, rgba(247, 247, 247, 0.55) 57%, rgba(247, 247, 247, 0.45) 62.5%, rgba(247, 247, 247, 0.352) 67.7%, rgba(247, 247, 247, 0.259) 72.7%, rgba(247, 247, 247, 0.175) 77.8%, rgba(247, 247, 247, 0.104) 82.9%, rgba(247, 247, 247, 0.049) 88.2%, rgba(247, 247, 247, 0.013) 93.9%, rgba(247, 247, 247, 0));
   padding: 10px;
 }
 
@@ -279,7 +279,7 @@ video {
 }
 
 body {
-  background: #f0efeb;
+  background: #e4e2e0;
   font-family: 'Helvetica Now Text';
   -webkit-touch-callout: none;
   -webkit-user-select: none;
